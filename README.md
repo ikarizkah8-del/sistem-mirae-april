@@ -12,9 +12,11 @@ Dokumentasi lengkap (struktur kode, menu, endpoint REST API): [mirai_rulebased/R
 |---|---|
 | `mirai_rulebased/` | kode sistem: `pipeline.py`, `rules.py`, `layanan.py`, `api.py` (Flask), tampilan web, dan hasil `output/` (aturan, evaluasi, sampel) |
 | `data_uji/data_uji_campuran.csv` | 10.000 baris contoh campuran normal + 3 varian Mirai dari data uji (kolom `label` = kunci jawaban) |
+| `dataset2023/` | 80 berkas CSV per-PCAP CICIoT2023 (±725 MB): `begin` (BenignTraffic, 4 berkas), `mirai greeth` (29), `mirai greip` (22), `Mirai-udpplain` (25) |
 
-Folder `dataset2023/` (80 berkas CSV, ±725 MB) **tidak disertakan** karena terlalu besar untuk GitHub.
-Aplikasi web tetap bisa dijalankan tanpa dataset karena hasil pipeline sudah tersimpan di `mirai_rulebased/output/`.
+Dataset bersumber dari CICIoT2023 (Canadian Institute for Cybersecurity, <https://www.unb.ca/cic/datasets/iotdataset-2023.html>).
+Jika memakai dataset ini, kutip: Neto, E. C. P., dkk. (2023). CICIoT2023: A Real-Time Dataset and Benchmark for Large-Scale
+Attacks in IoT Environment. *Sensors*, 23(13), 5941. https://doi.org/10.3390/s23135941
 
 ## Menjalankan aplikasi
 
@@ -28,11 +30,13 @@ Buka <http://127.0.0.1:5000>. Grafik memakai Plotly.js dari CDN, jadi perlu kone
 
 ## Menjalankan ulang pipeline (opsional)
 
-1. Unduh berkas CSV per-PCAP CICIoT2023 kelas `BenignTraffic`, `Mirai-greeth_flood`, `Mirai-greip_flood`, dan
-   `Mirai-udpplain` dari laman resmi Canadian Institute for Cybersecurity
-   (<https://www.unb.ca/cic/datasets/iotdataset-2023.html>).
-2. Simpan ke folder `dataset2023/` di sebelah folder `mirai_rulebased/` (subfolder bebas, label diambil dari nama berkas).
-3. Jalankan `.venv\Scripts\python.exe mirai_rulebased\pipeline.py` (±2 menit, RAM ±3 GB).
+Dataset sudah tersedia di folder `dataset2023/` (label diambil dari nama berkas). Jalankan:
+
+```bash
+.venv\Scripts\python.exe mirai_rulebased\pipeline.py
+```
+
+Waktu proses ±2 menit dengan RAM ±3 GB.
 
 ## Hasil utama (data uji 1.064.524 baris)
 
