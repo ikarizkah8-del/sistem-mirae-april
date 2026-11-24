@@ -1,0 +1,21 @@
+# Lingkungan Python
+.venv/
+__pycache__/
+*.pyc
+
+# Dataset CICIoT2023 (725 MB) - unduh sendiri, lihat README.md
+dataset2023/
+
+# Data lokal aplikasi (riwayat deteksi & ambang kustom milik pengguna)
+mirai_rulebased/output/riwayat/
+mirai_rulebased/output/rules_kustom.json
+
+# Draft skripsi dan dokumen
+*.docx
+*.pdf
+~$*
+
+# Pengaturan editor / alat lokal
+.claude/
+.vscode/
+.streamlit/

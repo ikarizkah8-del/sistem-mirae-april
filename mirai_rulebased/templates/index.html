@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mirai Detector</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231f6fd6' stroke-width='2'%3E%3Cpath d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="{{ url_for('static', filename='gaya.css') }}?v={{ versi }}">
+  <script src="https://cdn.jsdelivr.net/npm/plotly.js-dist-min@2.35.2/plotly.min.js"></script>
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <span class="ikon-brand" data-ikon="shield"></span>
+      <div><div class="brand-judul">Mirai Detector</div><div class="brand-sub">IoT Security</div></div>
+    </div>
+    <nav class="menu" id="menu">
+      <a href="#beranda" data-hal="beranda"><span data-ikon="home"></span>Beranda</a>
+      <a href="#analisis" data-hal="analisis"><span data-ikon="activity"></span>Analisis Trafik</a>
+      <a href="#deteksi" data-hal="deteksi"><span data-ikon="shield"></span>Deteksi Serangan</a>
+      <a href="#evaluasi" data-hal="evaluasi"><span data-ikon="target"></span>Evaluasi Sistem</a>
+    </nav>
+    <div class="pengguna">
+      <span data-ikon="user"></span>
+      <div><b>{{ penulis }}</b><br>NIM {{ nim }}</div>
+    </div>
+  </aside>
+  <button class="tombol-menu" id="tombolMenu" aria-label="Buka menu">☰</button>
+  <main class="konten" id="konten"><p class="muat">Memuat …</p></main>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="{{ url_for('static', filename='app.js') }}?v={{ versi }}"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+skenario,accuracy,precision,recall,f1,FP,FN,rule
+Semua fitur kandidat,0.9921880577610275,0.999857196996743,0.9888482096297584,0.9943222317807546,104,8212,R1: Protocol Type >= 47 AND Header_Length <= 7.2 | R2: Protocol Type >= 47 AND Header_Length <= 12.1 | R3: TCP <= 0.09 AND AVG >= 453
+Tanpa IAT,0.9921880577610275,0.999857196996743,0.9888482096297584,0.9943222317807546,104,8212,R1: Protocol Type >= 47 AND Header_Length <= 7.2 | R2: Protocol Type >= 47 AND Header_Length <= 12.1 | R3: TCP <= 0.09 AND AVG >= 453
+Tanpa Std/Min/Max (sensitif ukuran jendela),0.9921880577610275,0.999857196996743,0.9888482096297584,0.9943222317807546,104,8212,R1: Protocol Type >= 47 AND Header_Length <= 7.2 | R2: Protocol Type >= 47 AND Header_Length <= 12.1 | R3: TCP <= 0.09 AND AVG >= 453
+Tanpa Protocol Type,0.9911434594241182,0.9998501046517064,0.987344917868938,0.9935581644184925,109,9319,R1: Header_Length <= 3.52 AND AVG >= 494 | R2: Header_Length <= 7.6 AND AVG >= 388 | R3: TCP <= 0.09 AND AVG >= 453
+Tanpa Rate,0.9921880577610275,0.999857196996743,0.9888482096297584,0.9943222317807546,104,8212,R1: Protocol Type >= 47 AND Header_Length <= 7.2 | R2: Protocol Type >= 47 AND Header_Length <= 12.1 | R3: TCP <= 0.09 AND AVG >= 453

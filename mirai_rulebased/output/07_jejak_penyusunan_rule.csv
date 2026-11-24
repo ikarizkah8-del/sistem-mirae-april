@@ -1,0 +1,7 @@
+varian,langkah,kondisi,metode_ambang,kelompok,tpr_train,fpr_train,youden_j_train
+Mirai-greeth_flood,1,Protocol Type >= 47,Youden J maksimum (tumpang tindih terkecil),Jenis protokol,0.9943947525342874,0.0,0.9943947525342874
+Mirai-greeth_flood,2,Header_Length <= 7.2,Youden J maksimum (tumpang tindih terkecil),Panjang header,0.9934024433129979,0.0,0.9934024433129979
+Mirai-greip_flood,1,Protocol Type >= 47,Youden J maksimum (tumpang tindih terkecil),Jenis protokol,0.9872737969730353,0.0,0.9872737969730353
+Mirai-greip_flood,2,Header_Length <= 12.1,persentil 1/99 kelas Mirai (cakupan 99%),Panjang header,0.9864801367780555,0.0,0.9864801367780555
+Mirai-udpplain,1,TCP <= 0.09,Youden J maksimum (tumpang tindih terkecil),Jenis protokol,0.9878551947597846,0.004669168208907075,0.9831860265508775
+Mirai-udpplain,2,AVG >= 453,persentil 1/99 kelas Mirai (cakupan 99%),Ukuran paket,0.9845773704604913,0.00025337584126656576,0.9843239946192247

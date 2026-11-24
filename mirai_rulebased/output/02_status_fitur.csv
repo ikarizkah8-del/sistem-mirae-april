@@ -1,0 +1,40 @@
+fitur,status,alasan
+Header_Length,kandidat rule,indikator: Panjang header
+Protocol Type,kandidat rule,indikator: Jenis protokol
+Time_To_Live,hanya analisis,"mencerminkan OS perangkat penyerang di lab, bukan perilaku Mirai"
+Rate,kandidat rule,indikator: Laju paket
+fin_flag_number,kandidat rule,indikator: Flag TCP
+syn_flag_number,kandidat rule,indikator: Flag TCP
+rst_flag_number,kandidat rule,indikator: Flag TCP
+psh_flag_number,kandidat rule,indikator: Flag TCP
+ack_flag_number,kandidat rule,indikator: Flag TCP
+ece_flag_number,hanya analisis,hampir selalu 0
+cwr_flag_number,hanya analisis,hampir selalu 0
+ack_count,dikeluarkan,turunan: ack_flag_number x Number
+syn_count,dikeluarkan,turunan: syn_flag_number x Number
+fin_count,dikeluarkan,turunan: fin_flag_number x Number
+rst_count,dikeluarkan,turunan: rst_flag_number x Number
+HTTP,hanya analisis,indikator aplikasi; ketiadaannya bukan ciri Mirai
+HTTPS,hanya analisis,indikator aplikasi; ketiadaannya bukan ciri Mirai
+DNS,hanya analisis,indikator aplikasi
+Telnet,dikeluarkan,konstan (selalu 0)
+SMTP,hanya analisis,indikator aplikasi
+SSH,hanya analisis,indikator aplikasi
+IRC,hanya analisis,indikator aplikasi
+TCP,kandidat rule,indikator: Jenis protokol
+UDP,kandidat rule,indikator: Jenis protokol
+DHCP,hanya analisis,indikator aplikasi
+ARP,hanya analisis,lapisan link
+ICMP,kandidat rule,indikator: Jenis protokol
+IGMP,hanya analisis,indikator protokol jarang
+IPv,hanya analisis,"lapisan link/jaringan, hampir selalu 1"
+LLC,hanya analisis,"lapisan link, hampir selalu 1"
+Tot sum,dikeluarkan,turunan: AVG x Number
+Min,kandidat rule,indikator: Ukuran paket
+Max,kandidat rule,indikator: Ukuran paket
+AVG,kandidat rule,indikator: Ukuran paket
+Std,kandidat rule,indikator: Ukuran paket
+Tot size,dikeluarkan,redundan: identik dengan AVG
+IAT,kandidat rule,indikator: Jeda antarpaket
+Number,dikeluarkan,"artefak: ukuran jendela paket berbeda (Benign=10, Mirai=100)"
+Variance,dikeluarkan,redundan: Std^2

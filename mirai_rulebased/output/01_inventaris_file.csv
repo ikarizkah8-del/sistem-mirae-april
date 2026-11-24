@@ -1,0 +1,81 @@
+file,folder,kelas,baris,ukuran_mb
+BenignTraffic.pcap.csv,begin,BenignTraffic,362361,71.62
+BenignTraffic1.pcap.csv,begin,BenignTraffic,295585,58.42
+BenignTraffic2.pcap.csv,begin,BenignTraffic,310413,61.23
+BenignTraffic3.pcap.csv,begin,BenignTraffic,129832,25.61
+Mirai-greeth_flood.pcap.csv,mirai greeth,Mirai-greeth_flood,33597,6.43
+Mirai-greeth_flood1.pcap.csv,mirai greeth,Mirai-greeth_flood,34113,6.58
+Mirai-greeth_flood10.pcap.csv,mirai greeth,Mirai-greeth_flood,34499,6.78
+Mirai-greeth_flood11.pcap.csv,mirai greeth,Mirai-greeth_flood,34551,6.77
+Mirai-greeth_flood12.pcap.csv,mirai greeth,Mirai-greeth_flood,34240,6.71
+Mirai-greeth_flood13.pcap.csv,mirai greeth,Mirai-greeth_flood,34451,6.81
+Mirai-greeth_flood14.pcap.csv,mirai greeth,Mirai-greeth_flood,34058,6.46
+Mirai-greeth_flood15.pcap.csv,mirai greeth,Mirai-greeth_flood,34137,6.58
+Mirai-greeth_flood16.pcap.csv,mirai greeth,Mirai-greeth_flood,34081,6.54
+Mirai-greeth_flood17.pcap.csv,mirai greeth,Mirai-greeth_flood,34054,6.48
+Mirai-greeth_flood18.pcap.csv,mirai greeth,Mirai-greeth_flood,34101,6.49
+Mirai-greeth_flood19.pcap.csv,mirai greeth,Mirai-greeth_flood,34136,6.59
+Mirai-greeth_flood2.pcap.csv,mirai greeth,Mirai-greeth_flood,34054,6.49
+Mirai-greeth_flood20.pcap.csv,mirai greeth,Mirai-greeth_flood,34235,6.63
+Mirai-greeth_flood21.pcap.csv,mirai greeth,Mirai-greeth_flood,34752,6.76
+Mirai-greeth_flood22.pcap.csv,mirai greeth,Mirai-greeth_flood,34247,6.67
+Mirai-greeth_flood23.pcap.csv,mirai greeth,Mirai-greeth_flood,34493,6.63
+Mirai-greeth_flood24.pcap.csv,mirai greeth,Mirai-greeth_flood,34071,6.44
+Mirai-greeth_flood25.pcap.csv,mirai greeth,Mirai-greeth_flood,34080,6.49
+Mirai-greeth_flood26.pcap.csv,mirai greeth,Mirai-greeth_flood,34518,6.69
+Mirai-greeth_flood27.pcap.csv,mirai greeth,Mirai-greeth_flood,34201,6.62
+Mirai-greeth_flood28.pcap.csv,mirai greeth,Mirai-greeth_flood,33979,6.6
+Mirai-greeth_flood3.pcap.csv,mirai greeth,Mirai-greeth_flood,34066,6.49
+Mirai-greeth_flood4.pcap.csv,mirai greeth,Mirai-greeth_flood,34025,6.53
+Mirai-greeth_flood5.pcap.csv,mirai greeth,Mirai-greeth_flood,34016,6.5
+Mirai-greeth_flood6.pcap.csv,mirai greeth,Mirai-greeth_flood,34146,6.57
+Mirai-greeth_flood7.pcap.csv,mirai greeth,Mirai-greeth_flood,34186,6.57
+Mirai-greeth_flood8.pcap.csv,mirai greeth,Mirai-greeth_flood,34067,6.55
+Mirai-greeth_flood9.pcap.csv,mirai greeth,Mirai-greeth_flood,34680,6.92
+Mirai-greip_flood.pcap.csv,mirai greip,Mirai-greip_flood,35073,6.91
+Mirai-greip_flood1.pcap.csv,mirai greip,Mirai-greip_flood,35128,6.84
+Mirai-greip_flood10.pcap.csv,mirai greip,Mirai-greip_flood,35292,6.8
+Mirai-greip_flood11.pcap.csv,mirai greip,Mirai-greip_flood,35019,6.69
+Mirai-greip_flood12.pcap.csv,mirai greip,Mirai-greip_flood,35339,6.8
+Mirai-greip_flood13.pcap.csv,mirai greip,Mirai-greip_flood,35251,6.79
+Mirai-greip_flood14.pcap.csv,mirai greip,Mirai-greip_flood,35098,6.88
+Mirai-greip_flood15.pcap.csv,mirai greip,Mirai-greip_flood,35105,6.81
+Mirai-greip_flood16.pcap.csv,mirai greip,Mirai-greip_flood,34920,6.59
+Mirai-greip_flood17.pcap.csv,mirai greip,Mirai-greip_flood,35948,7.07
+Mirai-greip_flood18.pcap.csv,mirai greip,Mirai-greip_flood,33982,6.72
+Mirai-greip_flood19.pcap.csv,mirai greip,Mirai-greip_flood,34844,6.82
+Mirai-greip_flood2.pcap.csv,mirai greip,Mirai-greip_flood,34846,6.66
+Mirai-greip_flood20.pcap.csv,mirai greip,Mirai-greip_flood,35089,6.85
+Mirai-greip_flood21.pcap.csv,mirai greip,Mirai-greip_flood,11991,2.31
+Mirai-greip_flood3.pcap.csv,mirai greip,Mirai-greip_flood,35168,6.85
+Mirai-greip_flood4.pcap.csv,mirai greip,Mirai-greip_flood,35784,7.05
+Mirai-greip_flood5.pcap.csv,mirai greip,Mirai-greip_flood,35456,6.97
+Mirai-greip_flood6.pcap.csv,mirai greip,Mirai-greip_flood,36052,7.19
+Mirai-greip_flood7.pcap.csv,mirai greip,Mirai-greip_flood,35462,7.03
+Mirai-greip_flood8.pcap.csv,mirai greip,Mirai-greip_flood,35755,7.09
+Mirai-greip_flood9.pcap.csv,mirai greip,Mirai-greip_flood,35044,6.8
+Mirai-udpplain.pcap.csv,Mirai-udpplain,Mirai-udpplain,36481,7.03
+Mirai-udpplain1.pcap.csv,Mirai-udpplain,Mirai-udpplain,36431,7.05
+Mirai-udpplain10.pcap.csv,Mirai-udpplain,Mirai-udpplain,36603,7.05
+Mirai-udpplain11.pcap.csv,Mirai-udpplain,Mirai-udpplain,36272,6.8
+Mirai-udpplain12.pcap.csv,Mirai-udpplain,Mirai-udpplain,36270,6.83
+Mirai-udpplain13.pcap.csv,Mirai-udpplain,Mirai-udpplain,36408,6.94
+Mirai-udpplain14.pcap.csv,Mirai-udpplain,Mirai-udpplain,36346,6.95
+Mirai-udpplain15.pcap.csv,Mirai-udpplain,Mirai-udpplain,36329,6.9
+Mirai-udpplain16.pcap.csv,Mirai-udpplain,Mirai-udpplain,36333,6.91
+Mirai-udpplain17.pcap.csv,Mirai-udpplain,Mirai-udpplain,36443,6.98
+Mirai-udpplain18.pcap.csv,Mirai-udpplain,Mirai-udpplain,36410,6.9
+Mirai-udpplain19.pcap.csv,Mirai-udpplain,Mirai-udpplain,36515,6.94
+Mirai-udpplain2.pcap.csv,Mirai-udpplain,Mirai-udpplain,36214,6.95
+Mirai-udpplain20.pcap.csv,Mirai-udpplain,Mirai-udpplain,36305,6.98
+Mirai-udpplain21.pcap.csv,Mirai-udpplain,Mirai-udpplain,36469,7.02
+Mirai-udpplain22.pcap.csv,Mirai-udpplain,Mirai-udpplain,36611,7.09
+Mirai-udpplain23.pcap.csv,Mirai-udpplain,Mirai-udpplain,36785,6.99
+Mirai-udpplain24.pcap.csv,Mirai-udpplain,Mirai-udpplain,15090,2.84
+Mirai-udpplain3.pcap.csv,Mirai-udpplain,Mirai-udpplain,36699,7.11
+Mirai-udpplain4.pcap.csv,Mirai-udpplain,Mirai-udpplain,36315,6.91
+Mirai-udpplain5.pcap.csv,Mirai-udpplain,Mirai-udpplain,36503,7.08
+Mirai-udpplain6.pcap (1).csv,Mirai-udpplain,Mirai-udpplain,36503,7.04
+Mirai-udpplain7.pcap.csv,Mirai-udpplain,Mirai-udpplain,36573,7.12
+Mirai-udpplain8.pcap.csv,Mirai-udpplain,Mirai-udpplain,36679,7.14
+Mirai-udpplain9.pcap.csv,Mirai-udpplain,Mirai-udpplain,36987,7.25

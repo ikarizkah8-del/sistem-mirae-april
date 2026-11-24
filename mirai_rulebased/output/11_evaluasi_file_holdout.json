@@ -1,0 +1,177 @@
+{
+  "jumlah_data": 717910,
+  "biner": {
+    "TP": 582875,
+    "TN": 129322,
+    "FP": 6,
+    "FN": 5707,
+    "accuracy": 0.9920421779888844,
+    "precision": 0.9999897063036881,
+    "recall": 0.9903038149314793,
+    "f1": 0.9951231921110612,
+    "fpr": 4.639366571817395e-05,
+    "specificity": 0.9999536063342819
+  },
+  "per_kelas": [
+    {
+      "kelas": "BenignTraffic",
+      "jumlah": 129328,
+      "ditandai_mirai": 6,
+      "persen_ditandai": 0.0046393665718173945,
+      "keterangan": "False Positive"
+    },
+    {
+      "kelas": "Mirai-greeth_flood",
+      "jumlah": 224889,
+      "ditandai_mirai": 223889,
+      "persen_ditandai": 99.555336188075,
+      "keterangan": "Detection rate"
+    },
+    {
+      "kelas": "Mirai-greip_flood",
+      "jumlah": 168839,
+      "ditandai_mirai": 167116,
+      "persen_ditandai": 98.97950118159903,
+      "keterangan": "Detection rate"
+    },
+    {
+      "kelas": "Mirai-udpplain",
+      "jumlah": 194854,
+      "ditandai_mirai": 191870,
+      "persen_ditandai": 98.4685970008314,
+      "keterangan": "Detection rate"
+    }
+  ],
+  "confusion_varian": {
+    "index": [
+      "BenignTraffic",
+      "Mirai-greeth_flood",
+      "Mirai-greip_flood",
+      "Mirai-udpplain"
+    ],
+    "columns": [
+      "BenignTraffic",
+      "Mirai-greeth_flood",
+      "Mirai-greip_flood",
+      "Mirai-udpplain"
+    ],
+    "data": [
+      [
+        129322,
+        0,
+        0,
+        6
+      ],
+      [
+        1000,
+        223636,
+        236,
+        17
+      ],
+      [
+        1723,
+        166088,
+        1019,
+        9
+      ],
+      [
+        2984,
+        0,
+        0,
+        191870
+      ]
+    ]
+  },
+  "kualitas_rule": [
+    {
+      "rule": "R1",
+      "varian": "Mirai-greeth_flood",
+      "panjang_rule": 2,
+      "ketepatan_presisi": 1.0,
+      "cakupan_varian": 0.9944283624365798,
+      "cakupan_semua_mirai": 0.6621405343690429,
+      "false_positive": 0,
+      "cakupan_unik": 0.0
+    },
+    {
+      "rule": "R2",
+      "varian": "Mirai-greip_flood",
+      "panjang_rule": 2,
+      "ketepatan_presisi": 1.0,
+      "cakupan_varian": 0.9897417065962248,
+      "cakupan_semua_mirai": 0.6642727776248679,
+      "false_positive": 0,
+      "cakupan_unik": 0.002132243255825017
+    },
+    {
+      "rule": "R3",
+      "varian": "Mirai-udpplain",
+      "panjang_rule": 2,
+      "ketepatan_presisi": 0.9999896162153181,
+      "cakupan_varian": 0.9846859700083139,
+      "cakupan_semua_mirai": 0.9817119789596012,
+      "false_positive": 6,
+      "cakupan_unik": 0.3260310373066115
+    }
+  ],
+  "redundansi_jaccard": {
+    "rules": [
+      "R1",
+      "R2",
+      "R3"
+    ],
+    "data": [
+      [
+        1.0,
+        0.9967901089316817,
+        0.6635226073112275
+      ],
+      [
+        0.9967901089316817,
+        1.0,
+        0.6620939780160959
+      ],
+      [
+        0.6635226073112275,
+        0.6620939780160959,
+        1.0
+      ]
+    ]
+  },
+  "ukuran_ruleset": {
+    "jumlah_rule": 3,
+    "jumlah_kondisi": 6,
+    "fitur_dipakai": [
+      "AVG",
+      "Header_Length",
+      "Protocol Type",
+      "TCP"
+    ]
+  },
+  "file_uji": [
+    "BenignTraffic3.pcap.csv",
+    "Mirai-greeth_flood11.pcap.csv",
+    "Mirai-greeth_flood15.pcap.csv",
+    "Mirai-greeth_flood19.pcap.csv",
+    "Mirai-greeth_flood23.pcap.csv",
+    "Mirai-greeth_flood27.pcap.csv",
+    "Mirai-greeth_flood3.pcap.csv",
+    "Mirai-greeth_flood7.pcap.csv",
+    "Mirai-greip_flood11.pcap.csv",
+    "Mirai-greip_flood15.pcap.csv",
+    "Mirai-greip_flood19.pcap.csv",
+    "Mirai-greip_flood3.pcap.csv",
+    "Mirai-greip_flood7.pcap.csv",
+    "Mirai-udpplain11.pcap.csv",
+    "Mirai-udpplain15.pcap.csv",
+    "Mirai-udpplain19.pcap.csv",
+    "Mirai-udpplain23.pcap.csv",
+    "Mirai-udpplain3.pcap.csv",
+    "Mirai-udpplain7.pcap.csv"
+  ],
+  "rules": [
+    "IF Protocol Type >= 47 AND Header_Length <= 6 THEN Mirai",
+    "IF Protocol Type >= 47 AND Header_Length <= 12.9 THEN Mirai",
+    "IF TCP <= 0.08 AND AVG >= 457 THEN Mirai"
+  ]
+}

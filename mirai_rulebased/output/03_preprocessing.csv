@@ -1,0 +1,5 @@
+kelas,baris_awal,setelah_hapus_nan_inf,setelah_hapus_duplikat,nan_inf_dihapus,duplikat_dihapus
+BenignTraffic,1098191,1098126,1093801,65,4325
+Mirai-greeth_flood,991834,991774,934328,60,57446
+Mirai-greip_flood,751646,751589,723592,57,27997
+Mirai-udpplain,890574,890507,796695,67,93812

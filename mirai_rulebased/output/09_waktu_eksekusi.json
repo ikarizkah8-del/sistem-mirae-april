@@ -1,0 +1,16 @@
+{
+  "baris_uji": 1064524,
+  "ulangan": 5,
+  "waktu_batch_detik": 0.012928000000101747,
+  "throughput_baris_per_detik": 82342512.37558956,
+  "latensi_per_baris_mikrodetik": 0.7772500002829474,
+  "waktu_semua_ulangan": [
+    0.006332000000838889,
+    0.008518299999195733,
+    0.015424999999595457,
+    0.012928000000101747,
+    0.013324600000487408
+  ],
+  "waktu_penyusunan_rule_detik": 5.549420600000303,
+  "catatan": "Penyusunan rule hanya menghitung statistik ambang (tanpa iterasi pelatihan). Pembanding: Guven & Gurkas-Aydin (2023) melaporkan pelatihan ANN > 23 jam."
+}

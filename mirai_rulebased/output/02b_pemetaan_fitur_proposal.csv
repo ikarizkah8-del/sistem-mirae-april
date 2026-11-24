@@ -1,0 +1,13 @@
+fitur_proposal,fitur_dipakai,catatan
+Rate,Rate,tersedia
+Srate,-,tidak ada di CSV per-PCAP; diwakili Rate
+flow_duration,-,tidak ada di CSV per-PCAP; diwakili IAT dan Rate
+Duration,-,tidak ada; kolom serupa adalah Time_To_Live (bukan durasi)
+syn_count,syn_flag_number,syn_count = syn_flag_number x Number (artefak jendela)
+syn_flag_number,syn_flag_number,tersedia
+Tot size,AVG,Tot size identik dengan AVG
+AVG,AVG,tersedia
+Std,Std,tersedia (hati-hati: dihitung pada jendela berbeda)
+IAT,IAT,tersedia
+TCP / UDP,TCP / UDP,tersedia
+Protocol Type,Protocol Type,tersedia (47 = GRE)

@@ -1,0 +1,163 @@
+{
+  "jumlah_data": 1064524,
+  "biner": {
+    "TP": 728172,
+    "TN": 328036,
+    "FP": 104,
+    "FN": 8212,
+    "accuracy": 0.9921880577610275,
+    "precision": 0.999857196996743,
+    "recall": 0.9888482096297584,
+    "f1": 0.9943222317807546,
+    "fpr": 0.0003169378923630158,
+    "specificity": 0.999683062107637
+  },
+  "per_kelas": [
+    {
+      "kelas": "BenignTraffic",
+      "jumlah": 328140,
+      "ditandai_mirai": 104,
+      "persen_ditandai": 0.031693789236301576,
+      "keterangan": "False Positive"
+    },
+    {
+      "kelas": "Mirai-greeth_flood",
+      "jumlah": 280298,
+      "ditandai_mirai": 278634,
+      "persen_ditandai": 99.40634610307602,
+      "keterangan": "Detection rate"
+    },
+    {
+      "kelas": "Mirai-greip_flood",
+      "jumlah": 217078,
+      "ditandai_mirai": 214174,
+      "persen_ditandai": 98.66223200877104,
+      "keterangan": "Detection rate"
+    },
+    {
+      "kelas": "Mirai-udpplain",
+      "jumlah": 239008,
+      "ditandai_mirai": 235364,
+      "persen_ditandai": 98.47536484134422,
+      "keterangan": "Detection rate"
+    }
+  ],
+  "confusion_varian": {
+    "index": [
+      "BenignTraffic",
+      "Mirai-greeth_flood",
+      "Mirai-greip_flood",
+      "Mirai-udpplain"
+    ],
+    "columns": [
+      "BenignTraffic",
+      "Mirai-greeth_flood",
+      "Mirai-greip_flood",
+      "Mirai-udpplain"
+    ],
+    "data": [
+      [
+        328036,
+        0,
+        0,
+        104
+      ],
+      [
+        1664,
+        278337,
+        227,
+        70
+      ],
+      [
+        2904,
+        213409,
+        717,
+        48
+      ],
+      [
+        3644,
+        0,
+        0,
+        235364
+      ]
+    ]
+  },
+  "kualitas_rule": [
+    {
+      "rule": "R1",
+      "varian": "Mirai-greeth_flood",
+      "panjang_rule": 2,
+      "ketepatan_presisi": 1.0,
+      "cakupan_varian": 0.993003874447909,
+      "cakupan_semua_mirai": 0.6677847427429168,
+      "false_positive": 0,
+      "cakupan_unik": 0.0
+    },
+    {
+      "rule": "R2",
+      "varian": "Mirai-greip_flood",
+      "panjang_rule": 2,
+      "ketepatan_presisi": 1.0,
+      "cakupan_varian": 0.9864012014114742,
+      "cakupan_semua_mirai": 0.6690666826003824,
+      "false_positive": 0,
+      "cakupan_unik": 0.00128193985746567
+    },
+    {
+      "rule": "R3",
+      "varian": "Mirai-udpplain",
+      "panjang_rule": 2,
+      "ketepatan_presisi": 0.9998559704407027,
+      "cakupan_varian": 0.9847536484134423,
+      "cakupan_semua_mirai": 0.9804259734051799,
+      "false_positive": 104,
+      "cakupan_unik": 0.31978152702937596
+    }
+  ],
+  "redundansi_jaccard": {
+    "rules": [
+      "R1",
+      "R2",
+      "R3"
+    ],
+    "data": [
+      [
+        1.0,
+        0.998083987903144,
+        0.6688664873812784
+      ],
+      [
+        0.998083987903144,
+        1.0,
+        0.6679994946970654
+      ],
+      [
+        0.6688664873812784,
+        0.6679994946970654,
+        1.0
+      ]
+    ]
+  },
+  "ukuran_ruleset": {
+    "jumlah_rule": 3,
+    "jumlah_kondisi": 6,
+    "fitur_dipakai": [
+      "AVG",
+      "Header_Length",
+      "Protocol Type",
+      "TCP"
+    ]
+  },
+  "evaluasi_data_penyusunan": {
+    "TP": 1699336,
+    "TN": 765467,
+    "FP": 194,
+    "FN": 18895,
+    "accuracy": 0.9923148832557938,
+    "precision": 0.999885850794043,
+    "recall": 0.9890032248283264,
+    "f1": 0.9944147645198128,
+    "fpr": 0.00025337584126656576,
+    "specificity": 0.9997466241587334
+  }
+}

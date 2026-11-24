@@ -1,0 +1,62 @@
+[
+  {
+    "id": "R1",
+    "nama": "Rule Mirai-greeth_flood",
+    "varian": "Mirai-greeth_flood",
+    "kondisi": [
+      {
+        "fitur": "Protocol Type",
+        "op": ">=",
+        "ambang": 47.0,
+        "metode": "Youden J maksimum (tumpang tindih terkecil)"
+      },
+      {
+        "fitur": "Header_Length",
+        "op": "<=",
+        "ambang": 7.2,
+        "metode": "Youden J maksimum (tumpang tindih terkecil)"
+      }
+    ],
+    "alasan": "flood Mirai didominasi satu protokol (GRE=47 atau UDP=17); panjang header khas protokol flood"
+  },
+  {
+    "id": "R2",
+    "nama": "Rule Mirai-greip_flood",
+    "varian": "Mirai-greip_flood",
+    "kondisi": [
+      {
+        "fitur": "Protocol Type",
+        "op": ">=",
+        "ambang": 47.0,
+        "metode": "Youden J maksimum (tumpang tindih terkecil)"
+      },
+      {
+        "fitur": "Header_Length",
+        "op": "<=",
+        "ambang": 12.1,
+        "metode": "persentil 1/99 kelas Mirai (cakupan 99%)"
+      }
+    ],
+    "alasan": "flood Mirai didominasi satu protokol (GRE=47 atau UDP=17); panjang header khas protokol flood"
+  },
+  {
+    "id": "R3",
+    "nama": "Rule Mirai-udpplain",
+    "varian": "Mirai-udpplain",
+    "kondisi": [
+      {
+        "fitur": "TCP",
+        "op": "<=",
+        "ambang": 0.09,
+        "metode": "Youden J maksimum (tumpang tindih terkecil)"
+      },
+      {
+        "fitur": "AVG",
+        "op": ">=",
+        "ambang": 453.0,
+        "metode": "persentil 1/99 kelas Mirai (cakupan 99%)"
+      }
+    ],
+    "alasan": "flood Mirai didominasi satu protokol (GRE=47 atau UDP=17); paket flood berukuran seragam (payload tetap)"
+  }
+]
